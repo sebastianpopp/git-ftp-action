@@ -3,11 +3,11 @@ Uses [git-ftp](https://github.com/git-ftp/git-ftp) and [GitHub actions](https://
 
 ## Usage
 ```
-action "Deploy Live" {
-  uses = "sebastianpopp/git-ftp-action@master"
-  secrets = ["FTP_PWD", "FTP_USER"]
-  env = {
-    FTP_DEST = "ftp://ftp.example.com/path/"
-  }
-}
+- name: GIT-FTP Deploy
+  uses: sebastianpopp/git-ftp-action@master
+  env: 
+    FTP_DEST: ftp://${{secrets.FTP_HOST}}:${{secrets.FTP_PORT}}/public_html
+    FTP_USER: ${{secrets.FTP_USER}}
+    FTP_PWD: ${{secrets.FTP_PWD}}
+    # Requires secrets to be added to the repo (Settings > Secrets)
 ```
