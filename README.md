@@ -4,7 +4,7 @@ Uses [git-ftp](https://github.com/git-ftp/git-ftp) and [GitHub actions](https://
 ## Usage
 ```
 action "Deploy Live" {
-  uses = "sebastianpopp/git-ftp-action@master"
+  uses = "sebastianpopp/git-ftp-action@releases/v1"
   secrets = ["FTP_PWD", "FTP_USER"]
   env = {
     FTP_DEST = "ftp://ftp.example.com/path/"
