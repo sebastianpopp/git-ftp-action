@@ -16,7 +16,7 @@ jobs:
     - name: git-ftp push
       uses: sebastianpopp/git-ftp-action@releases/v2
       with:
-        host: "ftp://ftp.example.com/path/"
+        url: "ftp://ftp.example.com/path/"
         user: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PWD }}
 ```
