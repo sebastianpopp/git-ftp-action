@@ -1,0 +1,19 @@
+name: 'git-ftp-action'
+author: 'Sebastian Popp <git-ftp-action@sebastianpopp.com>'
+description: 'Uses git-ftp and GitHub actions to deploy a GitHub repository to a FTP server.'
+inputs:
+  url:
+    description: 'URL'
+    required: true
+  user:
+    description: 'FTP login name'
+    required: true
+  password:
+    description: 'FTP password'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  color: 'blue'
+  icon: 'upload-cloud'

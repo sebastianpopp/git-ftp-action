@@ -1,6 +1,3 @@
-#!/bin/sh
+#!/bin/sh -l
 
-set -eu
-
-# Deploy
-git ftp push --user $FTP_USER --passwd $FTP_PWD $FTP_DEST
+git ftp push --auto-init --user $INPUT_USER --passwd $INPUT_PASSWORD $INPUT_URL
