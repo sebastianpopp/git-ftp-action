@@ -28,3 +28,4 @@ Input parameter | Description | Required | Default
 url | git-ftp url (see [documentation](https://github.com/git-ftp/git-ftp/blob/1.5.1/man/git-ftp.1.md#url) for more info) | Yes | N/A
 user | FTP username | Yes | N/A
 password | FTP password | Yes | N/A
+syncroot | Specifies a local directory to sync from as if it were the git project root path. | No | .
