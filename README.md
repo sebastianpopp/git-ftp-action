@@ -14,7 +14,7 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v1
     - name: git-ftp push
       uses: sebastianpopp/git-ftp-action@releases/v2
       with:
