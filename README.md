@@ -2,6 +2,8 @@
 
 Uses [git-ftp](https://github.com/git-ftp/git-ftp) and [GitHub actions](https://github.com/features/actions) to deploy a GitHub repository to a FTP server.
 
+**⚠️ Attention:** This action works only with `actions/checkout@v1` for now. Make sure you use v1 and not v2 or master.
+
 ## Example usage
 
 ```
