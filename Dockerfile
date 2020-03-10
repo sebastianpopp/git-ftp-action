@@ -2,9 +2,7 @@ FROM alpine:3.11
 
 COPY LICENSE README.md /
 
-RUN apk add --no-cache bash
-
-RUN apk add --no-cache curl
+RUN apk add --no-cache bash curl git openssh
 
 RUN curl https://raw.githubusercontent.com/git-ftp/git-ftp/master/git-ftp > /bin/git-ftp
 
