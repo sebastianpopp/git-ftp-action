@@ -11,6 +11,10 @@ inputs:
   password:
     description: 'FTP password'
     required: true
+  syncroot:
+    description: 'Specifies a local directory to sync from as if it were the git project root path.'
+    required: false
+    default: '.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
