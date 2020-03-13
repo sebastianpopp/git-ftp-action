@@ -15,6 +15,10 @@ inputs:
     description: 'Specifies a local directory to sync from as if it were the git project root path.'
     required: false
     default: '.'
+  options:
+    description: 'Additional options'
+    required: false
+    default: '--auto-init'
 runs:
   using: 'docker'
   image: 'Dockerfile'
