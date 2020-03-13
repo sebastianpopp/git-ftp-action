@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: git-ftp push
-      uses: sebastianpopp/git-ftp-action@releases/v2
+      uses: sebastianpopp/git-ftp-action@releases/v3
       with:
         url: "ftp://ftp.example.com/path/"
         user: ${{ secrets.FTP_USER }}
