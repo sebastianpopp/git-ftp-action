@@ -9,7 +9,9 @@ RUN wget https://curl.haxx.se/download/curl-7.69.1.tar.gz \
   && cd curl-7.69.1 \
   && ./configure --with-libssh2=/usr/local \
   && make \
-  && make install
+  && make install \
+  && cd .. \
+  && rm -rf curl-7.69.1.tar.gz curl-7.69.1
 
 RUN curl https://raw.githubusercontent.com/git-ftp/git-ftp/1.6.0/git-ftp > /bin/git-ftp
 
